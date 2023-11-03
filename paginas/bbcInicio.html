@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inicio</title>
+
+	<style type="text/css">
+		body{
+			margin: 0;
+		}
+
+		#azul{
+			display: flex;
+			margin-left: 0;
+			background-image: url("../imagens/azul.jpg");
+			width: 100%;
+			height: 90vh;
+
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 1%;
+		}
+
+		#amarelo{
+			margin: 0;
+			width: 100%;
+			height: 25vh;
+			background-image: url("../imagens/amarelo.jpg");
+			clip-path: polygon(0 0, 100% 0, 100% 22%, 0 10%);
+		}
+
+		#branco{
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			height: 110vh;
+			background-image: url("../imagens/branco.jpg");
+		}
+
+		#vermelho{
+			margin: 0;
+			width: 100%;
+			height: 140vh;
+			background-image: url("../imagens/vermelho.jpg");
+			clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%);
+		}
+
+		#cel{ 
+			margin: 10%;
+			width: 60%;
+			height: 70vh;
+
+		}
+
+		#txtAzul{
+			font-family: 'Times New Roman', 'Arial';
+			width: 60%;
+			margin-top: 2%;
+			text-align: center;
+		}
+
+		.rowIAmarelo{
+			margin: 0;
+			display: flex;
+			height: 33%;
+			width: 100%;
+			justify-content: flex-start;
+		}
+
+		.rowMAmarelo{
+			margin: 0;
+			display: flex;
+			height: 33%;
+			width: 100%;
+			justify-content: center;
+		}
+
+		.rowFAmarelo{
+			margin: 0;
+			display: flex;
+			height: 33%;
+			width: 100%;
+			justify-content: flex-end;
+		}		
+
+		.bolaAmarela{
+			background-color: #FFA927 ;
+			margin-left: 15%;
+			margin-right: 15%;
+			height: 200px;
+			width: 200px;
+			border-radius: 110px;
+		}
+
+		.bolaBranca{
+			position: absolute;
+			z-index: 2;
+			border: 4px solid black;
+			background-color: #FFFFFF ;
+			margin-top: 15%;
+			margin-left: 15%;
+			margin-right: 15%;
+			height: 200px;
+			width: 200px;
+			border-radius: 110px;
+		}
+
+		.rowIBranca{
+			margin: 0;
+			display: flex;
+			height: 33%;
+			width: 100%;
+			justify-content: flex-start;	
+		}
+
+		.rowFBranca{
+			margin: 0;
+			display: flex;
+			height: 33%;
+			width: 100%;
+			justify-content: flex-end;	
+		}
+
+		.txtBolaAmarela{
+			color: white;
+			text-align: center;
+			font-size: 38px;
+			font-family: 'Times New Roman', 'Arial';
+		}
+
+		.txtBolaBranca{
+			color: Black;
+			text-align: center;
+			font-size: 64px;
+			font-family: 'Times New Roman', 'Arial';
+		}
+
+		.txt{
+			color: white;
+			font-size: 40px;
+			padding-top:12% ;
+			position: absolute;
+			z-index: 1;
+			height: 30vh;
+			width: 30%;
+			background-color: #1A1A1A;
+			margin-top: 25%;
+			margin-left: 10%;
+			margin-right: 10%;
+			text-align: center;
+		}
+}
+	</style>
+</head>
+<body>
+	<div id="azul">
+		<span>
+			<img src="../imagens/celular.jpg" id="cel" >
+		</span>
+		<span id="txtAzul">
+			<h1 style="font-size: 60px;">BiBliocamp</h1>
+			<br>
+			<p style="font-size: 35px;">A melhor maneira de gerenciar seus livros emprestados da escola!</p>
+		</span>
+
+
+	</div>
+	<div id="amarelo">
+		
+	</div>
+	<div id="branco">
+		<div class="rowIAmarelo ">
+			<div class="bolaAmarela">
+				<p class="txtBolaAmarela"><strong>
+					"X" <br>
+					Pessoas<br>
+					Aprovam</strong>
+				</p>
+			</div>
+		</div>
+		<div class="rowFAmarelo">
+			<div class="bolaAmarela">
+				<p class="txtBolaAmarela"><strong>
+					"X" <br>
+					Alunos<br>
+					Ultilizam</strong>
+				</p>
+			</div>
+		</div>
+		<div class="rowMAmarelo">
+			<div class="bolaAmarela">
+				<p class="txtBolaAmarela"><strong>
+					Mais de <br>
+					"X"<br>
+					Livros</strong>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="vermelho">
+		<div class="rowIBranca">
+			<div class="bolaBranca">
+				<p class="txtBolaBranca">📖</p>
+			</div>
+			<div class="txt">
+				<strong>Diversidade<br>
+					De Livros
+				</strong>
+			</div>
+		</div>
+		<br>
+		<div class="rowFBranca">
+			<div class="bolaBranca">
+				<p class="txtBolaBranca">⚡</p>
+			</div>
+			<div class="txt">
+				<strong>Fácil<br>
+					Acesso
+				</strong>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

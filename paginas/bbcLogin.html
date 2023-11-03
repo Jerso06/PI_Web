@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+
+	<style type="text/css">
+		
+		body{
+			background-color: #ED3030;
+		}
+
+		.footer{
+			color: white;
+			display: flex;
+			justify-content: space-between;
+			margin-left: 5%;
+		}
+
+		.link{
+			margin-right: 5%;
+			color: #ECECEC;
+		}
+
+		.formBorder{
+			background-color: #5C5C5C;
+			height: 60vh;
+			width: 50%;
+			margin-left: 25%;
+			margin-top: 10%;
+			border-radius: 20px;
+		}
+
+		.titulo{
+			margin-top: 3%;
+			color: #ECECEC;
+			text-align: center;
+		}
+
+		.txt{
+			border: none;
+			color: #9D9D9D;
+			font-size: 18px;
+			font-family: 'Times New Roman', 'Arial';
+			padding-left: 1% ;
+			border-radius: 30px;
+			width: 90%;
+			height: 8%;
+			margin:2%;
+			margin-left: 4%;
+
+		}
+
+		.txtM{
+			border: none;
+			color: #9D9D9D;
+			font-size: 18px;
+			font-family: 'Times New Roman', 'Arial';
+			padding-left: 2% ;
+			padding-top: 2%;
+			border-radius: 30px;
+			width: 90%;
+			margin:2%;
+			margin-left: 4%;
+			height: 40%;
+			resize: none;
+		}
+
+		.btn{
+			font-family: 'Times New Roman', 'Arial';
+			font-size: 28px;
+			color: white;
+			background-color: #4FC0E8;
+			border-radius: 30px;
+			height: 10%;
+			width: 90%;
+			margin-left: 5%;
+			margin-bottom: 2%;
+		}
+
+		.rs{
+			text-align: right;
+			margin-right: 5%;
+		}
+
+		.es{
+			color: #ECECEC;;
+		}
+		
+		}
+
+		.cBox{
+			margin-left: 5%;
+		}
+
+
+	</style>
+
+</head>
+<body>
+
+	<div class="formBorder">
+		<h1 class="titulo">Login</h1>
+
+		<input type="email" name="email" class="txt" placeholder="✉️Email:">
+
+		<input type="password" name="password" class="txt" placeholder="🔒Senha:">
+		<div class="rs"><a href="rSenha" class="es" >Esqueceu a senha?</a></div>
+		<br>
+		<button type="button" class="btn">Entrar</button>
+		<br>
+		<div class="footer">
+			<span><input type="checkbox" name="checkbox" value="1">Manter Login</span>
+			<a href="bbcCadastro" class="link">Cadastrar-se</a>
+		</div>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ajuda</title>
+
+	<style type="text/css">
+		body{
+			margin: 0;
+		}
+
+		details{
+			font-family: 'Times New Roman', 'Arial';
+			margin-left: 5%;
+			font-size: 28px;
+			margin-top: 1%;
+		}
+
+		.summary{
+			font-size: 20px;
+		}
+
+		#azul{
+			display: flex;
+			margin-left: 0;
+			background-image: url("../imagens/azul.jpg");
+			width: 100%;
+			height: 70vh;
+
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 1%;
+		}
+
+		#amarelo{
+			margin: 0;
+			width: 100%;
+			height: 25vh;
+			background-image: url("../imagens/amarelo.jpg");
+			clip-path: polygon(0 0, 100% 0, 100% 22%, 0 10%);
+		}
+
+		#branco{
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			height: 650px;
+			background-image: url("../imagens/branco.jpg");
+		}
+
+		#vermelho{
+			padding-top: 5%;
+			margin: 0;
+			width: 100%;
+			height: 50vh;
+			background-image: url("../imagens/vermelho.jpg");
+			clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%);
+		}
+
+		#txt{
+			font-family: 'Times New Roman', 'Arial';
+			text-align: center;
+			margin-top: 20%;
+			width: 80%;
+			color: white;
+			font-size: 22px;
+		}
+
+		.linkContato{
+			color: white;
+		}
+
+		.txtVermelho{
+			color: white;
+			text-align: center;
+			margin: 5%;
+			font-size: 40px;
+		}
+
+		.duvida{
+			margin-top: 30%;
+			margin-left: 20%;
+			height: 40vh;
+		}
+
+		.paragrafo{
+			text-align: center;
+			font-size: 32px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="azul">
+		<span>
+			<img src="../imagens/duvida.jpg" class="duvida">
+		</span>
+		<span id="txt">
+			<h1>Duvidas Frequentes</h1>
+			<p class="paragrafo">Esta com algum problema?<br>
+				Veja algumas dúvidas que<br>
+				frequentemente são<br>
+				mandadas a nós!
+			</p>
+		</span>
+	</div>
+	<div id="amarelo">
+		
+	</div>
+	<div id="branco">
+
+		<details>
+			<summary>Problemas com alocação dos livros</summary>
+			<p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</details>
+		<details>
+			<summary>Problemas com login</summary>
+			<p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</details>
+		<details>
+			<summary>Problemas com cadastro</summary>
+			<p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</details>
+		<details>
+			<summary>Problemas ao procurar livros</summary>
+			<p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</details>
+	</div>
+	<div id="vermelho">
+		<p class="txtVermelho">Não conseguiu resolver seu problema?</p>
+		<p class="txtVermelho">Entre em <a href="bbcContato.html" class="linkContato">contato</a> conosco! </p>
+	</div>
+</body>
+</html>
