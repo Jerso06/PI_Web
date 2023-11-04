@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<title>Inicio</title>
 
-	<style type="text/css">
+<style type="text/css">
+
 		body{
 			margin: 0;
 		}
@@ -33,10 +34,11 @@
 		}
 
 		#branco{
-			padding: 0;
+			padding-left: 30%;
+			padding-right: 30%;
 			margin: 0;
-			width: 100%;
-			height: 110vh;
+			height: 130vh;
+			
 			background-image: url("../imagens/branco.jpg");
 		}
 
@@ -50,16 +52,39 @@
 
 		#cel{ 
 			margin: 10%;
-			width: 60%;
-			height: 70vh;
-
+			width: 400px;
+			height: 400px;
+            
 		}
 
+        #botaoEditar{
+            
+            width: 250px;
+            height: 70px;
+            color: #FFFFFF;
+            background-color: #1A1A1A;
+            border-radius: 50px;
+			align-items: left;
+			margin-left: 18%;
+            
+        }
+
 		#txtAzul{
-			font-family: 'Times New Roman', 'Arial';
+			margin-left: 21%;
+			color: #FFFFFF;
+			font-size: 50px;
+            font-family: 'Times New Roman', 'Arial';
 			width: 60%;
-			margin-top: 2%;
+		}
+
+		#txtAzulT{
+			
 			text-align: center;
+			color: #FFFFFF;
+			font-size: 30px;
+            font-family: 'Times New Roman', 'Arial';
+			width: 60%;
+			margin-top: 10%;
 		}
 
 		.rowIAmarelo{
@@ -153,8 +178,25 @@
 			text-align: center;
 		}
 
-		
-	</style>
+		.menu {
+  			margin-bottom: 20px;
+  			border: 2px solid rgb(255, 255, 255);
+  			background-color:#1A1A1A;
+			text-align: left;
+			padding-left: 15px;
+			border-radius: 10px;
+			margin-left: -30vh;
+			margin-right: 20vh;
+			margin-top: 10vh;
+		}
+
+		.inline-block {
+   display: inline-block;
+   margin: 3%;
+   margin-top: 10vh;
+}
+
+</style>
 </head>
 <body>
 
@@ -186,76 +228,38 @@
 
 
 
-
 	<div id="azul">
 		<span>
-			<img src="../imagens/celular.jpg" id="cel" >
+			<img src="../../IMG/Tonho (1).png" id="cel">
+			<span id="txtAzul">
+				Henrique<br><br>
+			</span><button id="botaoEditar">EDITAR PERFIL</button><br>
 		</span>
-		<span id="txtAzul">
-			<h1 style="font-size: 60px;">BiBliocamp</h1>
-			<br>
-			<p style="font-size: 35px;">A melhor maneira de gerenciar seus livros emprestados da escola!</p>
+		<span id="txtAzulT">
+			<div class="txtAzul" style="margin-left: -45vh; font-size: larger; margin-top: 10vh;">5 Seguidores • 22 Seguindo</div>
+			<div class="menu">
+				Descrição<br><br><br><br><br><br><br><br>	
+   			</div>
 		</span>
-
-
 	</div>
 	<div id="amarelo">
-		
 	</div>
 	<div id="branco">
-		<div class="rowIAmarelo ">
-			<div class="bolaAmarela">
-				<p class="txtBolaAmarela"><strong>
-					"X" <br>
-					Pessoas<br>
-					Aprovam</strong>
-				</p>
+		<div id="textin" style="text-align: center; font-size: 100px; font-family: Arial, Helvetica, sans-serif;"> Livros Favoritos</div>
+		<div class="textin">
+			<div class="inline-block">
+				<img src ="https://cdn.kobo.com/book-images/810abdb2-1d84-4e35-aa48-2f5fe2d1ac0a/1200/1200/False/a-arte-da-guerra-21.jpg" width="310vh" style="margin-left: -40%;">
 			</div>
-		</div>
-		<div class="rowFAmarelo">
-			<div class="bolaAmarela">
-				<p class="txtBolaAmarela"><strong>
-					"X" <br>
-					Alunos<br>
-					Ultilizam</strong>
-				</p>
+			<div class="inline-block">
+				<img src ="https://http2.mlstatic.com/D_NQ_NP_714404-MLB47775725080_102021-O.webp" width="320vh" style="margin-left: 40%;">
 			</div>
-		</div>
-		<div class="rowMAmarelo">
-			<div class="bolaAmarela">
-				<p class="txtBolaAmarela"><strong>
-					Mais de <br>
-					"X"<br>
-					Livros</strong>
-				</p>
-			</div>
-		</div>
-	</div>
-	<div id="vermelho">
-		<div class="rowIBranca">
-			<div class="bolaBranca">
-				<p class="txtBolaBranca">📖</p>
-			</div>
-			<div class="txt">
-				<strong>Diversidade<br>
-					De Livros
-				</strong>
+			<div class="inline-block">
+				<img src ="https://livrariataverna.com.br/1344/harry-potter-e-o-calice-de-fogo-jk-rowling.jpg" width="313vh" style="margin-left: 59%;">
 			</div>
 		</div>
 		<br>
-		<div class="rowFBranca">
-			<div class="bolaBranca"><br>
-				<p class="txtBolaBranca">⚡</p>
-			</div>
-			<div class="txt">
-				<strong>Fácil<br>
-					Acesso
-				</strong>
-			</div>
-		</div>
 	</div>
-
-
+	
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
